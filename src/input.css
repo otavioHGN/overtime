@@ -1,5 +1,8 @@
 @import "tailwindcss";
-
+/* BODY */
+body{
+    background-color: rgb(240, 240, 240);
+}
 /* HEADER */
 #header{
     background-color: rgb(10, 10, 10);
@@ -26,8 +29,8 @@
 #icon{
     height: 71px;
     width: 71px;
-    background-image:url(/src/images/overlogo.png);
-    background-size:100%;
+    justify-items: center;
+    align-content: center;
     
 }
 
@@ -37,11 +40,24 @@
     
 }
 
+
+
 @font-face {
     font-family: "tf-font";
     src: url(/src/images/TF2Build.ttf);
 }
+@font-face{
+    font-family: "tf-font2";
+    src: url(/src/images/TF2.ttf);
+}
 
+#paginas{
+    color: rgb(240, 240, 240);
+}
+.link-pagina{
+    margin-left: 40px;
+    font-family: "tf-font2";
+}
 
 
 /* ELEMENTOS */
@@ -70,7 +86,7 @@
     width: 100%;
     height: 100%;
     
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     /* background-image:url(../src/images/willemdafoe.png); */
     background-position: center;
     background-repeat: no-repeat;
@@ -82,6 +98,7 @@
 }
 
 .noticia:hover{
-    transform: scale(1.03);
+    transform: scale(1.02);
     border-bottom: 8px solid #ff7a00;
+    box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.315);
 }

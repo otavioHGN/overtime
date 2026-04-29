@@ -6,7 +6,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-200: oklch(92.4% 0.12 95.746);
     --spacing: 0.25rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -197,9 +196,9 @@
   .justify-self-start {
     justify-self: flex-start;
   }
-  .bg-amber-200 {
-    background-color: var(--color-amber-200);
-  }
+}
+body {
+  background-color: rgb(240, 240, 240);
 }
 #header {
   background-color: rgb(10, 10, 10);
@@ -223,8 +222,8 @@
 #icon {
   height: 71px;
   width: 71px;
-  background-image: url(/src/images/overlogo.png);
-  background-size: 100%;
+  justify-items: center;
+  align-content: center;
 }
 .tf-font {
   font-family: "tf-font";
@@ -233,6 +232,17 @@
 @font-face {
   font-family: "tf-font";
   src: url(/src/images/TF2Build.ttf);
+}
+@font-face {
+  font-family: "tf-font2";
+  src: url(/src/images/TF2.ttf);
+}
+#paginas {
+  color: rgb(240, 240, 240);
+}
+.link-pagina {
+  margin-left: 40px;
+  font-family: "tf-font2";
 }
 .orange {
   color: #ff7a00;
@@ -254,13 +264,14 @@
 .noticia {
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.15s;
 }
 .noticia:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
   border-bottom: 8px solid #ff7a00;
+  box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.315);
 }

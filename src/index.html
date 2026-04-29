@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Overtime</title>
 
     <link rel="stylesheet" href="../dist/output.css">
@@ -11,18 +14,27 @@
 </head>
 
 <body>
-    
+
     <header class="grid-cols-3 w-full" id="header">
         <div class="space justify-self-start"></div>
 
         <div id="head-content" class="justify-self-center">
 
 
-            <div id="icon"></div>
+            <div id="icon">
+                <img src="images/overlogo.png" alt="">
+            </div>
 
             <div>&nbsp;&nbsp;</div>
 
             <h1 id="over-text" class="tf-font"><span class="white">OVER</span><span class="orange">TIME</span></h1>
+
+            <div id="paginas">
+                <a href="" class="link-pagina"><b>spotlight</b></a>
+                <a href="" class="link-pagina"><b>página 02</b></a>
+                <a href="" class="link-pagina"><b>página 03</b></a>
+            </div>
+
         </div>
 
 
@@ -34,27 +46,27 @@
     <main id="main" class="grid-cols-1 w-full">
         <div class="space"></div>
 
-        <div id="mpanel" class="grid grid-cols-4 gap-x-20 gap-y-8 w-full bg-amber-200">
+        <div id="mpanel" class="grid grid-cols-4 gap-x-20 gap-y-8 w-full ">
 
-                    <!-- esse é o main panel, o espaço todo de onde terá as notícias principais
+            <!-- esse é o main panel, o espaço todo de onde terá as notícias principais
                     
-                    Terá 3 notícias principais, 1 sendo a maior, e outras 2 menores
+                    Terá 3 notícias destaque principais, 1 sendo a maior, e outras 2 menores
 
-                    a primeira ocupa 1col e 2row, as outras 1col e 1row
+                    a primeira ocupa 2col e 2row, as outras 2col e 1row
                     -->
-                <div class="noticia row-span-2 col-span-2"></div>
-                <div class="noticia col-span-2"></div>
-                <div class="noticia col-span-2"></div>
-                
+            <div id="destaque-1" class="noticia row-span-2 col-span-2"></div>
+            <div id="destaque-2" class="noticia col-span-2"></div>
+            <div id="destaque-3" class="noticia col-span-2"></div>
 
-                </div>
+
+        </div>
 
         <div class="space"></div>
-        
-       
+
+
     </main>
 
-
+    <!-- npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch -->
 </body>
 
 </html>
