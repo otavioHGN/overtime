@@ -92,9 +92,20 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     transition: all 0.15s;
+    vertical-align: bottom;
 
+    position: relative;
+}
 
-
+.noticia p{
+    /* background: linear-gradient(0deg,rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 60%, rgba(237, 221, 83, 0) 100%);
+    padding-left: 7px; */
+    background-color: #301700;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    font-size: 13pt;
 }
 
 .noticia:hover{
