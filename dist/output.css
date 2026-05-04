@@ -160,11 +160,17 @@
   }
 }
 @layer utilities {
+  .static {
+    position: static;
+  }
   .col-span-2 {
     grid-column: span 2 / span 2;
   }
   .row-span-2 {
     grid-row: span 2 / span 2;
+  }
+  .contents {
+    display: contents;
   }
   .grid {
     display: grid;
