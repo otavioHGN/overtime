@@ -16,7 +16,7 @@
 <body>
 
     <header class="grid-cols-3 w-full" id="header">
-        <div class="space justify-self-start"></div>
+        <!--  -->
 
         <div id="head-content" class="justify-self-center">
 
@@ -38,15 +38,19 @@
         </div>
 
 
-        <div class="space justify-self-end"></div>
+        
     </header>
 
     <br>
 
     <main id="main" class="grid-cols-1 w-full">
-        <div class="space"></div>
 
-        <div id="mpanel" class="grid grid-cols-4 gap-x-16 gap-y-8 w-full ">
+        <div id="mpanel" class="grid
+        md:grid-cols-2 md:gap-x-4 md:gap-y-2
+        lg:grid-cols-4 lg:gap-x-16 lg:gap-y-8 
+         
+         
+         w-full ">
 
             <!-- esse é o main panel, o espaço todo de onde terá as notícias principais
                     
@@ -54,7 +58,7 @@
 
                     a primeira ocupa 2col e 2row, as outras 2col e 1row
                     -->
-            <div id="destaque-1" class="noticia row-span-2 col-span-2">
+            <div id="destaque-1" class="noticia lg:row-span-2 md:row-span-1 col-span-2">
                 <p>O game foi gameado</p>
             </div>
             <div id="destaque-2" class="noticia col-span-2"><p>O game foi gameado ipsum dolor sit amet, consector constroctum sei la oque </p></div>
@@ -63,7 +67,7 @@
 
         </div>
 
-        <div class="space"><br></div>
+
 
         <div id="destaque" class="grid-cols-5 gap-x-10 gap-y-4">
             <h1 id="titulo-destaque" class="tf-font-small">Destaques</h1>
