@@ -85,6 +85,7 @@ body{
    flex-wrap: wrap;
 }
 
+
 #mpanel{
     width: 76%;
     height: 550px;  
@@ -92,6 +93,17 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 64rem){
+
+    #mpanel{
+        height: 850px;
+        width: 95%;
+    }
+    
+}
+
+
  
 .noticia{
     width: 100%;
@@ -139,14 +151,15 @@ body{
 
 
 #destaque{
-    width: 76%;
+    
     height: 550px;  
-    /* background-color: #ff7b00b4; */
     justify-content: center;
     align-items: center;
     display: flex;
     position: relative;
 }
+
+
 
 #titulo-destaque{
     position: absolute;
@@ -156,10 +169,11 @@ body{
     }
 
 .destaq-box{
-    width: 20%;
-    height: 70%;
+    flex: 1;
+    width: 270px;
+    height: 400px;
     background-color: #222222;
-    border-radius: 1%;
+    border-radius: 2%;
     transition: all 0.15s;
     position: relative;
 }
@@ -178,4 +192,19 @@ body{
 .destaq-box:hover{
     transform: scale(1.02);
     border-bottom: 5px solid #ff7a00;
+}
+
+@media screen and (max-width: 64rem){
+
+    #destaque{
+        padding-top: 5rem;
+        width: 95%;
+        height: 500px;
+        flex-wrap: inherit;
+    }
+
+    .destaq-box{
+
+        width: 18rem;
+    }
 }
